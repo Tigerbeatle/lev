@@ -8,7 +8,7 @@ package serviceTests
 import (
 	"testing"
 
-	"github.com/goinggo/beego-mgo/services/buoyService"
+	"github.com/tigerbeatle/le/services/buoyService"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

@@ -6,11 +6,11 @@
 package endpointTests
 
 import (
-	"github.com/goinggo/beego-mgo/localize"
-	_ "github.com/goinggo/beego-mgo/routes" // Initalize routes
-	"github.com/goinggo/beego-mgo/utilities/helper"
-	"github.com/goinggo/beego-mgo/utilities/mongo"
-	log "github.com/goinggo/tracelog"
+	"github.com/tigerbeatle/le/localize"
+	_ "github.com/tigerbeatle/le/routes" // Initalize routes
+	"github.com/tigerbeatle/le/utilities/helper"
+	"github.com/tigerbeatle/le/utilities/mongo"
+	log "github.com/tigerbeatle/tracelog"
 )
 
 //** CONSTANTS

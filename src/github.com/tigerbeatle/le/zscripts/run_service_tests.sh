@@ -1,8 +1,8 @@
 export MGO_HOSTS=ds035428.mongolab.com:35428
-export MGO_DATABASE=goinggo
+export MGO_DATABASE=tigerbeatle
 export MGO_USERNAME=guest
 export MGO_PASSWORD=welcome
-export BUOY_DATABASE=goinggo
+export BUOY_DATABASE=tigerbeatle
 
-cd $GOPATH/src/github.com/goinggo/beego-mgo/test/serviceTests
+cd $GOPATH/src/github.com/tigerbeatle/le/test/serviceTests
 go test -v

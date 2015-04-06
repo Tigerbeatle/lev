@@ -6,11 +6,11 @@
 package serviceTests
 
 import (
-	"github.com/goinggo/beego-mgo/localize"
-	"github.com/goinggo/beego-mgo/services"
-	"github.com/goinggo/beego-mgo/utilities/helper"
-	"github.com/goinggo/beego-mgo/utilities/mongo"
-	log "github.com/goinggo/tracelog"
+	"github.com/tigerbeatle/le/localize"
+	"github.com/tigerbeatle/le/services"
+	"github.com/tigerbeatle/le/utilities/helper"
+	"github.com/tigerbeatle/le/utilities/mongo"
+	log "github.com/tigerbeatle/tracelog"
 )
 
 //** CONSTANTS

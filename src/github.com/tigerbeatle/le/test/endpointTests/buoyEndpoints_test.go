@@ -13,7 +13,7 @@ import (
 	"encoding/json"
 
 	"github.com/astaxie/beego"
-	log "github.com/goinggo/tracelog"
+	log "github.com/tigerbeatle/tracelog"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
