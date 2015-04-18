@@ -6,31 +6,31 @@
 package main
 
 import (
-	"github.com/astaxie/beego"
-	"github.com/tigerbeatle/le/localize"
-	_ "github.com/tigerbeatle/le/routes"
-	"github.com/tigerbeatle/le/utilities/helper"
-	"github.com/tigerbeatle/le/utilities/mongo"
-	"github.com/tigerbeatle/tracelog"
-	"os"
+    "github.com/astaxie/beego"
+    "github.com/tigerbeatle/le/localize"
+    _ "github.com/tigerbeatle/le/routes"
+    "github.com/tigerbeatle/le/utilities/helper"
+    "github.com/tigerbeatle/le/utilities/mongo"
+    "github.com/tigerbeatle/tracelog"
+    "os"
 )
 
 func main() {
-	tracelog.Start(tracelog.LevelTrace)
+    tracelog.Start(tracelog.LevelTrace)
 
-	// Init mongo
-	tracelog.Started("main", "Initializing Mongo")
-	err := mongo.Startup(helper.MainGoRoutine)
-	if err != nil {
-		tracelog.CompletedError(err, helper.MainGoRoutine, "initApp")
-		os.Exit(1)
-	}
+    // Init mongo
+    tracelog.Started("main", "Initializing Mongo")
+    err := mongo.Startup(helper.MainGoRoutine)
+    if err != nil {
+        tracelog.CompletedError(err, helper.MainGoRoutine, "initApp")
+        os.Exit(1)
+    }
 
-	// Load message strings
-	localize.Init("en-US")
+    // Load message strings
+    localize.Init("en-US")
 
-	beego.Run()
+    beego.Run()
 
-	tracelog.Completed(helper.MainGoRoutine, "Website Shutdown")
-	tracelog.Stop()
+    tracelog.Completed(helper.MainGoRoutine, "Website Shutdown")
+    tracelog.Stop()
 }

@@ -6,12 +6,14 @@
 package routes
 
 import (
-	"github.com/astaxie/beego"
-	"github.com/tigerbeatle/le/controllers"
+    "github.com/astaxie/beego"
+    "github.com/tigerbeatle/le/controllers"
 )
 
 func init() {
-	beego.Router("/", new(controllers.EggController), "get:Index")
-	beego.Router("/egg/retrievestation", new(controllers.EggController), "post:RetrieveEggStats")
-	beego.Router("/egg/stats/:stationId", new(controllers.EggController), "get,post:RetrieveEggStatsJSON")
+    beego.Router("/", new(controllers.EggController), "get:Index")
+    beego.Router("/purchase", new(controllers.EggController), "post:Purchase")
+    beego.Router("/dns", new(controllers.EggController), "post:DNS")
+    beego.Router("/egg/retrievestation", new(controllers.EggController), "post:RetrieveStation")
+    beego.Router("/egg/stats/:stationId", new(controllers.EggController), "get,post:RetrieveStationJSON")
 }

@@ -1,6 +1,7 @@
-export MGO_HOSTS=ds035428.mongolab.com:35428
-export MGO_DATABASE=tigerbeatle
-export MGO_USERNAME=guest
+#!/usr/bin/env bash
+export MGO_HOSTS=localhost
+export MGO_DATABASE=le
+export MGO_USERNAME=tigerbeatle
 export MGO_PASSWORD=welcome
 export BUOY_DATABASE=tigerbeatle
 
